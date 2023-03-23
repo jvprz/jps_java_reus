@@ -16,17 +16,7 @@ public class Ejercicio_2 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Introduce el precio de cada articulo: (introduce un numero 0 o negativo para acabar la compra)");
-
-		while(true) {
-			p = sc.nextDouble();
-			if(p <= 0) {
-				break;
-			}
-			c.add(p);
-		}
-		
-		n = c.size();
+		n = shop(c, p, sc);
 		
 		for(Double i : c) {
 			pt+=i;
@@ -62,5 +52,20 @@ public class Ejercicio_2 {
 		System.out.println("Cambio: " + r);
 		
 		sc.close();
+	}
+	
+	public static int shop(ArrayList<Double> c, double p, Scanner sc) {
+		
+		System.out.println("Introduce el precio de cada articulo: (introduce un numero 0 o negativo para acabar la compra)");
+
+		while(true) {
+			p = sc.nextDouble();
+			if(p <= 0) {
+				break;
+			}
+			c.add(p);
+		}
+		
+		return c.size();
 	}
 }
