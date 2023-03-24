@@ -19,10 +19,11 @@ public class Ejercicio_5 {
 		
 		for (int i = 0; i < n; i++) {
 			p[i] = new Password(l);
+			//is strong not implemented yet
 		}
 		
 		for (int i = 0; i < n; i++) {
-            System.out.println(p[i].getPass());
+            System.out.println(p[i].getPass() + " " + s[i]);
         }
 
 	}
