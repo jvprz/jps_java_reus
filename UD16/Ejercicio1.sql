@@ -88,44 +88,10 @@ ORDER BY fabricantes.nombre ASC;
 INSERT articulos (nombre, precio, fabricante) VALUES ('Altavoces', 70, 2);
 
 /* 1.18 */
-UPDATE articulos SET nombre='Impresora Láser' WHERE codigo=8;
+UPDATE articulos SET nombre='Impresora LÃ¡ser' WHERE codigo=8;
 
 /* 1.19 */
 UPDATE articulos SET articulos.precio=articulos.precio*0.9;
 
 /* 1.20 */
 UPDATE articulos SET precio=precio-10 WHERE precio >= 120;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
