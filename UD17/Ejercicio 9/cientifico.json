@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "642aea7a266a755cc7f4f422"
+  },
+  "dni": "12345678A",
+  "nomApells": "Javier Pérez"
+},{
+  "_id": {
+    "$oid": "642aea7a266a755cc7f4f423"
+  },
+  "dni": "12345678B",
+  "nomApells": "Aitor Iglesias"
+},{
+  "_id": {
+    "$oid": "642aea7a266a755cc7f4f424"
+  },
+  "dni": "12345678C",
+  "nomApells": "Camila Garcia"
+}]
