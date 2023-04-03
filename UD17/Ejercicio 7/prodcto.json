@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "642ab960266a755cc7f4f419"
+  },
+  "codigo": 1,
+  "nombre": "Logitech G Pro X",
+  "precio": 90
+},{
+  "_id": {
+    "$oid": "642ab960266a755cc7f4f41a"
+  },
+  "codigo": 2,
+  "nombre": "Logitech G Pro X2",
+  "precio": 180
+},{
+  "_id": {
+    "$oid": "642ab960266a755cc7f4f41b"
+  },
+  "codigo": 3,
+  "nombre": "Logitech G Pro X3",
+  "precio": 270
+}]
