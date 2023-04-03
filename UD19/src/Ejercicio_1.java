@@ -48,7 +48,7 @@ public class Ejercicio_1 extends JFrame{
 	
 	public static void main(String[] args) {
 
-		Ejercicio_1 e1 = new Ejercicio_1();
+		Ejercicio_1 e = new Ejercicio_1();
 	}
 }
 
