@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "642ab527266a755cc7f4f408"
+  },
+  "codigo": 1,
+  "nombre": "John Wick: Chapter 1",
+  "cailificacionEdad": 16
+},{
+  "_id": {
+    "$oid": "642ab527266a755cc7f4f409"
+  },
+  "codigo": 2,
+  "nombre": "John Wick: Chapter 2",
+  "cailificacionEdad": 16
+},{
+  "_id": {
+    "$oid": "642ab527266a755cc7f4f40a"
+  },
+  "codigo": 3,
+  "nombre": "John Wick: Chapter 3",
+  "cailificacionEdad": 16
+},{
+  "_id": {
+    "$oid": "642ab527266a755cc7f4f40b"
+  },
+  "codigo": 4,
+  "nombre": "John Wick: Chapter 4",
+  "cailificacionEdad": 16
+}]

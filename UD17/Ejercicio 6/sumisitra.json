@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "642ab76d266a755cc7f4f416"
+  },
+  "codigo_pieza": 1,
+  "id_prov": "A",
+  "precio": 90
+},{
+  "_id": {
+    "$oid": "642ab76d266a755cc7f4f417"
+  },
+  "codigo_pieza": 2,
+  "id_prov": "A",
+  "precio": 40
+}]

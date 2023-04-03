@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "642ab635266a755cc7f4f411"
+  },
+  "dni": "12345678A",
+  "nomApels": "Javier Pérez",
+  "jefe": null,
+  "despacho": 1
+},{
+  "_id": {
+    "$oid": "642ab635266a755cc7f4f412"
+  },
+  "dni": "12345678B",
+  "nomApels": "Iván Sanchez",
+  "jefe": "12345678A",
+  "despacho": 1
+}]

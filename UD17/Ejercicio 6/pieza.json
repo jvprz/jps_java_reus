@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "642ab76d266a755cc7f4f414"
+  },
+  "codigo": 1,
+  "nombre": "G Pro X"
+},{
+  "_id": {
+    "$oid": "642ab76d266a755cc7f4f415"
+  },
+  "codigo": 2,
+  "nombre": "G520"
+}]
