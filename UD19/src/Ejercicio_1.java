@@ -1,8 +1,14 @@
-package Ejercicios;
-
+/**
+ * 
+ */
 import java.awt.event.*;
 import javax.swing.*;
 
+/**
+ * 
+ * @author javier
+ *
+ */
 public class Ejercicio_1 extends JFrame{
 	
 	private JPanel contentPane;
