@@ -1,0 +1,8 @@
+[{
+  "_id": {
+    "$oid": "642a920734fe0343484651c7"
+  },
+  "codigo": 1,
+  "lugar": "Reus",
+  "capacidad": 100
+}]

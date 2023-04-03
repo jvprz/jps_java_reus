@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "642a91eb34fe0343484651c5"
+  },
+  "numReferencia": "A",
+  "contenido": "MSI GTX 2080",
+  "valor": 3000,
+  "almacen": 1
+},{
+  "_id": {
+    "$oid": "642a91eb34fe0343484651c6"
+  },
+  "numReferencia": "B",
+  "contenido": "Teclado Logitech",
+  "valor": 500,
+  "almacen": 1
+}]
