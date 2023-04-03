@@ -1,20 +1,25 @@
-{
-    "_id" : ObjectId("642a85b734fe0343484651b5"),
-    "codigo" : NumberInt(1),
-    "nombre" : "MSI"
-}
-{
-    "_id" : ObjectId("642a85b734fe0343484651b6"),
-    "codigo" : NumberInt(2),
-    "nombre" : "NVIDIA"
-}
-{
-    "_id" : ObjectId("642a85b734fe0343484651b7"),
-    "codigo" : NumberInt(3),
-    "nombre" : "ASUS"
-}
-{
-    "_id" : ObjectId("642a85b734fe0343484651b8"),
-    "codigo" : NumberInt(4),
-    "nombre" : "Gigabyte"
-}
+[{
+  "_id": {
+    "$oid": "642a85b734fe0343484651b5"
+  },
+  "codigo": 1,
+  "nombre": "MSI"
+},{
+  "_id": {
+    "$oid": "642a85b734fe0343484651b6"
+  },
+  "codigo": 2,
+  "nombre": "NVIDIA"
+},{
+  "_id": {
+    "$oid": "642a85b734fe0343484651b7"
+  },
+  "codigo": 3,
+  "nombre": "ASUS"
+},{
+  "_id": {
+    "$oid": "642a85b734fe0343484651b8"
+  },
+  "codigo": 4,
+  "nombre": "Gigabyte"
+}]

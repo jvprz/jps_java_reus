@@ -1,28 +1,33 @@
-{
-    "_id" : ObjectId("642a85b734fe0343484651b9"),
-    "codigo" : NumberInt(1),
-    "nombre" : "GTX 2060",
-    "precio" : NumberInt(100),
-    "fabricante_id" : NumberInt(4)
-}
-{
-    "_id" : ObjectId("642a85b734fe0343484651ba"),
-    "codigo" : NumberInt(2),
-    "nombre" : "GTX 2070",
-    "precio" : NumberInt(200),
-    "fabricante_id" : NumberInt(3)
-}
-{
-    "_id" : ObjectId("642a85b734fe0343484651bb"),
-    "codigo" : NumberInt(3),
-    "nombre" : "GTX 2080",
-    "precio" : NumberInt(300),
-    "fabricante_id" : NumberInt(2)
-}
-{
-    "_id" : ObjectId("642a85b734fe0343484651bc"),
-    "codigo" : NumberInt(4),
-    "nombre" : "GTX 2090",
-    "precio" : NumberInt(400),
-    "fabricante_id" : NumberInt(1)
-}
+[{
+  "_id": {
+    "$oid": "642a85b734fe0343484651b9"
+  },
+  "codigo": 1,
+  "nombre": "GTX 2060",
+  "precio": 100,
+  "fabricante_id": 4
+},{
+  "_id": {
+    "$oid": "642a85b734fe0343484651ba"
+  },
+  "codigo": 2,
+  "nombre": "GTX 2070",
+  "precio": 200,
+  "fabricante_id": 3
+},{
+  "_id": {
+    "$oid": "642a85b734fe0343484651bb"
+  },
+  "codigo": 3,
+  "nombre": "GTX 2080",
+  "precio": 300,
+  "fabricante_id": 2
+},{
+  "_id": {
+    "$oid": "642a85b734fe0343484651bc"
+  },
+  "codigo": 4,
+  "nombre": "GTX 2090",
+  "precio": 400,
+  "fabricante_id": 1
+}]
