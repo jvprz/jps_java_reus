@@ -11,6 +11,7 @@ import javax.swing.*;
  *
  */
 public class Ejercicio_4 extends JFrame{
+	
 	private JPanel contentPane;
 	private JLabel events;
 	private JTextArea textArea;
