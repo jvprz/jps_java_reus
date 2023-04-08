@@ -3,12 +3,14 @@
  */
 package Ejercicio_4;
 
-import javax.swing.*;
-
 /**
- * @author javie
+ * @author javier
  *
  */
-public class Ejercicio_4_MainApp extends JFrame{
+public class Ejercicio_4_MainApp {
+	
+	public static void main(String args[]) {
+		Ejercicio_4 e = new Ejercicio_4();
+	}
 
 }
