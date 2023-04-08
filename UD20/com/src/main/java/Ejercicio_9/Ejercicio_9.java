@@ -3,8 +3,7 @@
  */
 package Ejercicio_9;
 
-import java.awt.event.ActionListener;
-
+import java.awt.event.*;
 import javax.swing.*;
 
 /**
@@ -16,6 +15,12 @@ public class Ejercicio_9 extends JFrame{
 	private JPanel contentPane;
 	private JButton[][] gameBoard = new JButton[4][4];
 	private int[][] result = new int[4][4];
+	
+	private boolean movement = true;
+	private JButton temp;
+	private String bURL = "", tURL = "";
+	
+	private int tries = 0;
 	
 	public Ejercicio_9(int[][] r) {
 		result = r;
@@ -36,7 +41,7 @@ public class Ejercicio_9 extends JFrame{
 		textArea.setBounds(400, 69, 184, 331);
 		contentPane.add(textArea);
 		
-		JLabel lblNewLabel = new JLabel("Intentos:");
+		JLabel lblNewLabel = new JLabel("Intentos: " + tries);
 		lblNewLabel.setBounds(412, 33, 162, 14);
 		contentPane.add(lblNewLabel);
 		
@@ -49,9 +54,59 @@ public class Ejercicio_9 extends JFrame{
 	
 	// Ation listener
 	ActionListener al = e -> {
+		
 		JButton b = (JButton) e.getSource();
-		int[] position = getPosition(b);
-		b.setIcon(new ImageIcon("./src/assets/" + result[position[0]][position[1]] + ".png"));
+		
+		if (movement) {
+			int[] position = getPosition(b);
+			bURL = "./src/assets/" + result[position[0]][position[1]] + ".png";
+			Icon figure = new ImageIcon(bURL);
+			b.setIcon(figure);
+			b.setDisabledIcon(figure);
+			b.setEnabled(false);
+			
+			temp = b;
+			tURL = bURL;
+			
+			movement = false;
+			return;			
+		}
+		if (!movement) {
+			int[] position = getPosition(b);
+			bURL = "./src/assets/" + result[position[0]][position[1]] + ".png";
+			if (bURL.equals(tURL)) {
+				Icon figure = new ImageIcon(bURL);
+				b.setIcon(figure);
+				b.setDisabledIcon(figure);
+				b.setEnabled(false);				
+				temp = b;
+			} else {
+				try {
+					Icon figure = new ImageIcon(bURL);
+					 b.setIcon(figure);
+					 b.setDisabledIcon(figure);
+					 b.setEnabled(false);
+					 
+					 Timer timer = new Timer(400, new ActionListener() {
+					        @Override
+					        public void actionPerformed(ActionEvent e) {
+					            b.setIcon(null);
+					            b.setEnabled(true);
+					            temp.setIcon(null);
+					            temp.setEnabled(true);   
+					        }
+					 });
+					 timer.setRepeats(false);
+					 timer.start();
+					 movement = true;
+					 return;
+					
+				} catch (Exception ex) {
+					ex.printStackTrace();
+				}
+			}
+		}
+		
 	};
 	
 	/**
@@ -65,8 +120,8 @@ public class Ejercicio_9 extends JFrame{
 			for (int j = 0; j < gameBoard[i].length; j++) {
 				gameBoard[i][j] = new JButton();
 				gameBoard[i][j].setBounds(x, y, 100, 100);
-				gameBoard[i][j].addActionListener(al);
 				contentPane.add(gameBoard[i][j]);
+				gameBoard[i][j].addActionListener(al);
 				x += 100;
 			}
 			x = 0;
@@ -107,7 +162,5 @@ public class Ejercicio_9 extends JFrame{
 	 */
 	public void setGameBoard(JButton[][] gameBoard) {
 		this.gameBoard = gameBoard;
-	}
-	
-	
+	}	
 }
