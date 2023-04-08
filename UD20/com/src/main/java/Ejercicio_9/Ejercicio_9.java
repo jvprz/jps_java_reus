@@ -51,7 +51,7 @@ public class Ejercicio_9 extends JFrame{
 	ActionListener al = e -> {
 		JButton b = (JButton) e.getSource();
 		int[] position = getPosition(b);
-		b.setText(result[position[0]][position[1]] + "");
+		b.setIcon(new ImageIcon("./src/assets/" + result[position[0]][position[1]] + ".png"));
 	};
 	
 	/**
@@ -63,7 +63,7 @@ public class Ejercicio_9 extends JFrame{
 		
 		for (int i = 0; i < gameBoard.length; i++) {
 			for (int j = 0; j < gameBoard[i].length; j++) {
-				gameBoard[i][j] = new JButton("IDK");
+				gameBoard[i][j] = new JButton();
 				gameBoard[i][j].setBounds(x, y, 100, 100);
 				gameBoard[i][j].addActionListener(al);
 				contentPane.add(gameBoard[i][j]);
