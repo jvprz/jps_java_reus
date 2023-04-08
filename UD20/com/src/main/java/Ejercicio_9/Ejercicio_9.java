@@ -23,6 +23,9 @@ public class Ejercicio_9 extends JFrame{
 	private int tries = 0;
 	private JLabel lTries;
 	
+	private JTextArea textArea;
+	private int pairs = 0;
+	
 	public Ejercicio_9(int[][] r) {
 		result = r;
 		initComponents();
@@ -38,7 +41,7 @@ public class Ejercicio_9 extends JFrame{
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JTextArea textArea = new JTextArea();
+		textArea = new JTextArea();
 		textArea.setBounds(400, 69, 184, 331);
 		contentPane.add(textArea);
 		
@@ -83,7 +86,10 @@ public class Ejercicio_9 extends JFrame{
 				temp = b;
 				movement = true;
 				tries++;
+				pairs++;
+				textArea.append("¡Enhorabuena!\nLlevas " + pairs + " parejas.\n");
 				lTries.setText("Intentos: " + tries);
+				if (pairs == 8) JOptionPane.showMessageDialog(this, "Enhorabuena, has completado el juego con " + tries + " intentos");
 				return;
 			} else {
 				try {
