@@ -21,6 +21,7 @@ public class Ejercicio_9 extends JFrame{
 	private String bURL = "", tURL = "";
 	
 	private int tries = 0;
+	private JLabel lTries;
 	
 	public Ejercicio_9(int[][] r) {
 		result = r;
@@ -41,9 +42,9 @@ public class Ejercicio_9 extends JFrame{
 		textArea.setBounds(400, 69, 184, 331);
 		contentPane.add(textArea);
 		
-		JLabel lblNewLabel = new JLabel("Intentos: " + tries);
-		lblNewLabel.setBounds(412, 33, 162, 14);
-		contentPane.add(lblNewLabel);
+		lTries = new JLabel("Intentos: " + tries);
+		lTries.setBounds(412, 33, 162, 14);
+		contentPane.add(lTries);
 		
 		// Intial game board 4x4
 		initGameBoard();
@@ -80,6 +81,10 @@ public class Ejercicio_9 extends JFrame{
 				b.setDisabledIcon(figure);
 				b.setEnabled(false);				
 				temp = b;
+				movement = true;
+				tries++;
+				lTries.setText("Intentos: " + tries);
+				return;
 			} else {
 				try {
 					Icon figure = new ImageIcon(bURL);
@@ -99,6 +104,8 @@ public class Ejercicio_9 extends JFrame{
 					 timer.setRepeats(false);
 					 timer.start();
 					 movement = true;
+					 tries++;
+					 lTries.setText("Intentos: " + tries);
 					 return;
 					
 				} catch (Exception ex) {
