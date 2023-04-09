@@ -18,17 +18,22 @@ class GeometriaTest {
 
 	}
 	
+	// Void contructor
 	@Test
 	public void testGettersSetters() {
-		g.setId(0);
-		int id = g.getId();
-		g.setNom("Rectangulo");
-		String figura = g.getNom();
-		g.setArea(22.55);
-		double area = g.getArea();
-		assertEquals(id, 0);
-		assertEquals(figura, "Rectangulo");
-		assertEquals(area, 22.55, 0.00001);
+		
+		// Set values
+		int id = 0;
+		String figura = "Cuadrado";
+		double area = 25.0;
+		g.setId(id);
+		g.setNom(figura);
+		g.setArea(area);
+				
+		// Comprove
+		assertEquals(id, g.getId());
+		assertEquals(figura, g.getNom());
+		assertEquals(area, g.getArea(), 0.00001);
 	}
 
 }
