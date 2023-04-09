@@ -4,7 +4,7 @@
 package Ejercicio_9;
 
 import java.util.Random;
-import javax.swing.JButton;
+import javax.swing.*;
 
 /**
  * @author javier
@@ -41,8 +41,17 @@ public class Ejercicio_9_Game {
 		return game;
 	}
 	
-	private static void see(int[][] r) {
-		
+	
+	/**
+	 * This mathod update buttons.
+	 * @param b
+	 * @param figure
+	 * @param enabled
+	 */
+	public static void updateButton(JButton b, Icon figure, boolean enabled) {
+		b.setIcon(figure);
+		b.setDisabledIcon(figure);
+		b.setEnabled(enabled);
 	}
 
 	/**
@@ -51,11 +60,7 @@ public class Ejercicio_9_Game {
 	public static void game() {
 		
 		// Game board results
-		int[][] r = gameGenerator();
-		
-		Ejercicio_9 e = new Ejercicio_9(r);
-		
-
-				
+		int[][] r = gameGenerator();		
+		Ejercicio_9 e = new Ejercicio_9(r);			
 	}
 }

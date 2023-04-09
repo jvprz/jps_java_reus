@@ -12,19 +12,16 @@ import javax.swing.*;
  */
 public class Ejercicio_9 extends JFrame{
 	
-	private JPanel contentPane;
-	private JButton[][] gameBoard = new JButton[4][4];
-	private int[][] result = new int[4][4];
-	
-	private boolean movement = true;
-	private JButton temp;
-	private String bURL = "", tURL = "";
-	
-	private int tries = 0;
-	private JLabel lTries;
-	
-	private JTextArea textArea;
-	private int pairs = 0;
+	private JPanel contentPane;							// Content pane
+	private JButton[][] gameBoard = new JButton[4][4];	// Game board buttons
+	private int[][] result = new int[4][4];				// Game board answers
+	private boolean movement = true;					// First movement
+	private JButton temp;								// Temporal button
+	private String bURL = "", tURL = "";				// Images url
+	private int tries = 0;								// Tries
+	private JLabel lTries;								// Label of tries
+	private JTextArea textArea;							// Text area
+	private int pairs = 0;								// Pairs of figures
 	
 	public Ejercicio_9(int[][] r) {
 		result = r;
@@ -62,27 +59,21 @@ public class Ejercicio_9 extends JFrame{
 		JButton b = (JButton) e.getSource();
 		
 		if (movement) {
+			
 			int[] position = getPosition(b);
 			bURL = "./src/assets/" + result[position[0]][position[1]] + ".png";
 			Icon figure = new ImageIcon(bURL);
-			b.setIcon(figure);
-			b.setDisabledIcon(figure);
-			b.setEnabled(false);
-			
+			Ejercicio_9_Game.updateButton(b, figure, false);
 			temp = b;
 			tURL = bURL;
-			
 			movement = false;
-			return;			
-		}
-		if (!movement) {
+			
+		} else {
 			int[] position = getPosition(b);
 			bURL = "./src/assets/" + result[position[0]][position[1]] + ".png";
 			if (bURL.equals(tURL)) {
 				Icon figure = new ImageIcon(bURL);
-				b.setIcon(figure);
-				b.setDisabledIcon(figure);
-				b.setEnabled(false);				
+				Ejercicio_9_Game.updateButton(b, figure, false);				
 				temp = b;
 				movement = true;
 				tries++;
@@ -94,11 +85,9 @@ public class Ejercicio_9 extends JFrame{
 			} else {
 				try {
 					Icon figure = new ImageIcon(bURL);
-					 b.setIcon(figure);
-					 b.setDisabledIcon(figure);
-					 b.setEnabled(false);
+					Ejercicio_9_Game.updateButton(b, figure, false);
 					 
-					 Timer timer = new Timer(400, new ActionListener() {
+					Timer timer = new Timer(400, new ActionListener() {
 					        @Override
 					        public void actionPerformed(ActionEvent e) {
 					            b.setIcon(null);
@@ -111,15 +100,12 @@ public class Ejercicio_9 extends JFrame{
 					 timer.start();
 					 movement = true;
 					 tries++;
-					 lTries.setText("Intentos: " + tries);
-					 return;
-					
+					 lTries.setText("Intentos: " + tries);				
 				} catch (Exception ex) {
 					ex.printStackTrace();
 				}
 			}
-		}
-		
+		}	
 	};
 	
 	/**
