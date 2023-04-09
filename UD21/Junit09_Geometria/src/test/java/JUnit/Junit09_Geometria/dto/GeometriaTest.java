@@ -1,53 +1,34 @@
-/**
- * 
- */
 package JUnit.Junit09_Geometria.dto;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.*;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-/**
- * @author Javier
- *
- */
 class GeometriaTest {
+	
+	private Geometria g;
 
-	/**
-	 * @throws java.lang.Exception
-	 */
-	@BeforeAll
-	static void setUpBeforeClass() throws Exception {
-	}
-
-	/**
-	 * @throws java.lang.Exception
-	 */
-	@AfterAll
-	static void tearDownAfterClass() throws Exception {
-	}
-
-	/**
-	 * @throws java.lang.Exception
-	 */
 	@BeforeEach
-	void setUp() throws Exception {
+	public void before() {
+		g = new Geometria();
 	}
 
-	/**
-	 * @throws java.lang.Exception
-	 */
 	@AfterEach
-	void tearDown() throws Exception {
-	}
+	public void after() {
+		g = new Geometria();
 
+	}
+	
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	public void testGettersSetters() {
+		g.setId(0);
+		int id = g.getId();
+		g.setNom("Rectangulo");
+		String figura = g.getNom();
+		g.setArea(22.55);
+		double area = g.getArea();
+		assertEquals(id, 0);
+		assertEquals(figura, "Rectangulo");
+		assertEquals(area, 22.55, 0.00001);
 	}
 
 }
