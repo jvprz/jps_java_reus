@@ -21,6 +21,7 @@ public class IEmpleadosServiceImpl implements IEmpleadosService {
 
 	@Override
 	public Empleados saveEmpleados(Empleados empleados) {
+		empleados.setSalario(empleados.getSalarioBase());
 		return iEmpleadosDAO.save(empleados);
 	}
 

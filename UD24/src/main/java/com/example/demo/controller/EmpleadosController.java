@@ -10,9 +10,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.dto.Empleados;
+import com.example.demo.dto.Trabajos;
 import com.example.demo.service.IEmpleadosServiceImpl;
 
 @RestController
@@ -33,7 +35,8 @@ public class EmpleadosController {
 	}
 	
 	@PostMapping("/empleados")
-	public Empleados saveEmpleado(@RequestBody Empleados empleados) {
+	public Empleados saveEmpleado(@RequestBody Empleados empleados, @RequestParam int salario) {
+		empleados.setSalario(salario);
 		return empleadosServiceImpl.saveEmpleados(empleados);
 	}
 	
@@ -54,6 +57,15 @@ public class EmpleadosController {
 		
 		empleado_seleccionado.setNombre(empleados.getNombre());
 		empleado_seleccionado.setTrabajo(empleados.getTrabajo());
+		if (empleados.getTrabajo() == Trabajos.PROGRAMADOR) {
+	        empleados.setSalario(Empleados.getSalarioProgramador());
+	    } else if (empleados.getTrabajo() == Trabajos.DISEÑADOR) {
+	        empleados.setSalario(Empleados.getSalarioDisenador());
+	    } else if (empleados.getTrabajo() == Trabajos.GERENTE) {
+	        empleados.setSalario(Empleados.getSalarioGerente());
+	    } else if (empleados.getTrabajo() == Trabajos.VENDEDOR) {
+	    	empleados.setSalario(Empleados.getSalarioVendedor());
+	    }
 		
 		empleado_actualizado = empleadosServiceImpl.updateEmpleados(empleado_seleccionado);
 		System.out.println("El empleado actualizado es " + empleado_actualizado);
