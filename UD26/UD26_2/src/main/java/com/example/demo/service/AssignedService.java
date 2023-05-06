@@ -2,7 +2,7 @@ package com.example.demo.service;
 
 import java.util.List;
 
-import org.hibernate.id.Assigned;
+import com.example.demo.dto.Assigned;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

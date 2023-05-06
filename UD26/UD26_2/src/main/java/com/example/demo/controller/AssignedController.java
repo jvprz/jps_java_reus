@@ -2,10 +2,10 @@ package com.example.demo.controller;
 
 import java.util.List;
 
-import org.hibernate.id.Assigned;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import com.example.demo.dto.Assigned;
 import com.example.demo.service.AssignedService;
 
 @RestController
