@@ -1,0 +1,17 @@
+table {
+    background-color: #14abdd;
+    border: #10a2d3;
+}
+
+th {
+    background-color: #004242;
+    color: #c5f0c6;
+}
+
+td {
+    background-color: #d4fcd4;
+}
+
+.dark > td {
+    background-color: #acdbac !important;
+}

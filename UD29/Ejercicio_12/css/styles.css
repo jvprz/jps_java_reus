@@ -1,0 +1,24 @@
+table {
+    background-color: #0a9cce;
+}
+
+th {
+    background-color: #003333;
+    color: #c5f8c6;
+}
+
+td {
+    background-color: #ccffcc;
+}
+
+.size {
+    padding: 0 45px;
+}
+
+.centret {
+    text-align: center;
+}
+
+.dark {
+    background-color: #99cc99 !important;
+}
