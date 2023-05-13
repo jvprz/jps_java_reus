@@ -1,0 +1,65 @@
+body {
+    background-image: url("./../assets/ac.jpg");
+}
+span {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+}
+div {
+  text-align: center;
+  padding: 25px;
+  width: 250px;
+  height: 250px;
+  margin: 50px;
+  border: solid black 1px;
+}
+.A, .B, .C, .D {
+    background-image: url("./../assets/back_mantel.jpg");
+} 
+.B {
+    background-clip: content-box;
+}
+.C, .D {
+    background-size: 100% 100%;
+} 
+.D {
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-color: white;
+}  
+.E, .F {
+    background-image: url("./../assets/dh.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+.F {
+    background-origin: content-box;
+    background-color: white;
+} 
+.G, .H {   
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+}
+.G {
+    background-image: url("./../assets/dh_2.jpg");
+}
+.H {
+    background-image: url("./../assets/dh_3.jpg"); 
+}
+.I {
+    background: linear-gradient(to right, #d2ff52 0%, #566647 100%); 
+} 
+.J {
+    background: linear-gradient(to bottom, rgba(240,183,161,1) 0%,rgba(140,51,16,1) 80%,rgba(117,34,1,1) 51%,rgba(191,110,78,1) 100%);
+}
+.K {
+    background: linear-gradient(to top, rgba(50,116,45,1) 0%, rgba(239,239,210,1) 100%); 
+}   
+.L {
+    background: linear-gradient(to top, rgba(50, 116, 45, 0.781) 0%, rgba(0, 0, 0, 0.192) 100%);
+}

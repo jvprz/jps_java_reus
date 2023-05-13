@@ -1,0 +1,22 @@
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    color: #cea29e;
+}
+
+#title {
+    background-color: #55aa46;
+    padding: 0 200px;
+}
+
+#first {
+    background-color: #e27474;
+}
+
+#size {
+    background-color: #be9c4a;
+}
+
+#image {
+    background-image: url("./../assets/background.jpg");
+}

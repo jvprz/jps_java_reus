@@ -1,0 +1,11 @@
+ul {
+    list-style-type: decimal;
+}
+
+.spain > ul {
+    list-style-type: lower-alpha;
+}
+
+.eeuu > ul {
+    list-style-type: upper-roman;
+}

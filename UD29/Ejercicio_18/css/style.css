@@ -1,0 +1,17 @@
+div {
+  padding: 0 120px 100px 0;
+  border: solid blue 2px;
+  width: auto;
+  width: 100px;
+  background-color: #a4d3ff !important;
+  background:   url("./../assets/f01.png") left bottom repeat-x,
+                url("./../assets/f02.png") left bottom no-repeat,
+                url("./../assets/f03.png") left top repeat-x;
+}
+
+#center {
+  padding: 0 300px 300px 0;
+  margin: 25px;
+  border: solid red 2px;
+  width: 200px;
+}
