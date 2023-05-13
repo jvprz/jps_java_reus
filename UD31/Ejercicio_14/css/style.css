@@ -1,0 +1,11 @@
+#calculator {   
+    text-align: center;
+    margin: 0 auto;
+    padding: 1px;
+    border: 1px black solid;
+}
+
+.btn {
+    min-width: 39px;
+    text-align: center;
+}
