@@ -1,0 +1,14 @@
+.bg-image {
+    background-image: url('./../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.btn-capitalize {
+    text-transform: capitalize;
+}
+
+.btn-outline-light {
+    border-width: 1px;
+}
