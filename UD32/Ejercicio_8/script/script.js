@@ -95,9 +95,6 @@ function pressEquals() {
 
 // Easter egg
 function easterEgg() {
-    //window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
+    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
     document.getElementById("input").value = "EASTER EGG UNLOCKED";
-    var iframe = document.getElementById("video");
-    iframe.style.display = "block";
-    iframe.src = "https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1";
 }
