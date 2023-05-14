@@ -17,18 +17,74 @@
         </tr>
         <tr>
           <td>
-            <input type="button"id="module" value="%" class="btn" onclick="" />
+            <input type="button"id="module" value="%" class="btn" onclick="pressOperator(7)" />
           </td>
           <td>
-            <input type="button" id="root" value="√" class="btn" onclick="" />
+            <input type="button" id="root" value="√" class="btn" onclick="pressOperator(6)" />
           </td>
           <td>
-            <input type="button" id="power" value="x²" class="btn" onclick="" />
+            <input type="button" id="power" value="x²" class="btn" onclick="pressOperator(5)" />
           </td>
           <td>
-            <input type="button" id="mutiply" value="x" class="btn" onclick="" />
+            <input type="button" id="split" value="/" class="btn" onclick="pressOperator(4)" />
           </td>
-        </tr>    
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="7" class="btn" onclick="pressNumber(7)" />
+          </td>
+          <td>
+            <input type="button" value="8" class="btn" onclick="pressNumber(8)" />
+          </td>
+          <td>
+            <input type="button" value="9" class="btn" onclick="pressNumber(9)" />
+          </td>
+          <td>
+            <input type="button" id="mutiply" value="x" class="btn" onclick="pressOperator(3)" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="4" class="btn" onclick="pressNumber(4)" />
+          </td>
+          <td>
+            <input type="button" value="5" class="btn" onclick="pressNumber(5)" />
+          </td>
+          <td>
+            <input type="button" value="6" class="btn" onclick="pressNumber(6)" />
+          </td>
+          <td>
+            <input type="button" id="subtract" value="-" class="btn" onclick="pressOperator(2)" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="1" class="btn" onclick="pressNumber(1)" />
+          </td>
+          <td>
+            <input type="button" value="2" class="btn" onclick="pressNumber(2)" />
+          </td>
+          <td>
+            <input type="button" value="3" class="btn" onclick="pressNumber(3)" />
+          </td>
+          <td>
+            <input type="button" id="add" value="+" class="btn" onclick="pressOperator(1)" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="0" class="btn" onclick="pressNumber(0)" />
+          </td>
+          <td>
+            <input type="button" value="." class="btn" onclick="pressDecimals()" />
+          </td>
+          <td>
+            <input type="button" id="c" value="C" class="btn" onclick="pressC()" />
+          </td>
+          <td>
+            <input type="button" id="equal" value="=" class="btn" onclick="pressEquals()" />
+          </td>
+        </tr> 
       </table>
   </body>
 </html>

@@ -9,3 +9,7 @@
     min-width: 39px;
     text-align: center;
 }
+
+#input {
+    text-align: right;
+}
