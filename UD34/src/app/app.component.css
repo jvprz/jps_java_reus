@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Digital-7';
+  src: url('./../assets/digital-7.ttf');
+}
+
+.form-control {
+  font-family: 'Digital-7', monospace;
+  font-size: 3em;
+  text-align: right;
+}
+
+.btn {
+width: 100px;
+font-size: 1em;
+}
+
+
