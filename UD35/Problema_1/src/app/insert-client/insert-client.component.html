@@ -1,0 +1,29 @@
+<div class="container d-flex align-items-center justify-content-center">
+  <div class="text-left w-50">
+    <h1 class="mb-3 mt-5">{{name}}</h1>
+    <form>
+      <div class="form-floating mb-4">
+          <input class="form-control form-control-sm" type="text" [(ngModel)]="clientName" name="name" placeholder=" " required>
+          <label for="name" class="fw-normal">Nombre</label>
+      </div>
+      <div class="form-floating mb-4">
+        <input class="form-control form-control-sm" type="text" [(ngModel)]="clientCif" name="cif" placeholder=" " required>
+        <label for="cif" class="fw-normal">CIF</label>
+    </div>
+    <div class="form-floating mb-4">
+      <input class="form-control form-control-sm" type="text" [(ngModel)]="clientDirection" name="direction" placeholder=" " required>
+      <label for="direction" class="fw-normal">Dirección</label>
+    </div>
+    <div class="form-floating mb-4">
+      <select class="form-select form-select-sm" id="group" required >
+        <option value="0" disabled selected>Sin definir</option>
+        <option value="1">Test 1</option>
+        <option value="2">Test 2</option>
+        <option value="3">Test 3</option>
+      </select>
+      <label for="username" class="fw-normal">Username</label>
+    </div>
+  </form>
+  <button type="button" class="btn btn-dark mb-5" (click)="save()">Guardar</button>
+  </div>
+</div>

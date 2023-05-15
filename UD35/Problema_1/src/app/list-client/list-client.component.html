@@ -1,0 +1,26 @@
+<div class="container d-flex align-items-center justify-content-center">
+  <div class="text-left w-50">
+    <h1 class="mb-3">{{name}}</h1>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="col">#</th>
+            <th class="col">Nombre</th>
+            <th class="col">CIF</th>
+            <th class="col">Dirección</th>
+            <th class="col">Grupo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let value of formValues;">
+            <th scope="row">{{id + 1}}</th>
+            <td>{{value.clientName}}</td>
+            <td>{{value.clientCif}}</td>
+            <td>{{value.clientDirection}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
